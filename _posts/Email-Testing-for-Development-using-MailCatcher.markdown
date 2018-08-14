@@ -1,0 +1,14 @@
+What's up guys? This episode we're talking about MailCatcher, which is a really awesome gem if you are ever doing development with emails very heavily. Basically this runs a little SMTP server on your own laptop or computer, and then you configure Rails to send emails to this, and then it will show up in a web interface where you can see previews of it really easily and they immeditately show up whenever they receive, this can be really awesome, especially if you're sending emails from Sidekiq in the background, you can have them all show up here and it makes it easier to debug stuff. The way that this works is really simple, gem install mailcatcher to install it, and then you run mailcatcher as command, you don'e put this in your Gemfile, you just install this in your machine, and then it runs to the background daemon on port 1025 on localhost for the SMTP server, and then for the web interface, you can visit localhost:1080, and that will show you all of your emails that it receives here. Their documentation shows you how to connect rails to that, so basically you set the delivery method SMTP, and point it to localhost:1025 in your development environment, and that's really easy, so you can open up development.rb in your environments folder and at the bottom you can just paste that in and as you start your rails server again, you'll be able to hop into your rails app and once that's loaded, you can do something where it sends an email, so for example you can send yourself a "Forgot your password" email, and that will immeditately show up in the other tab and you can click on those emails as they come in. You can even inspect the full source of the emails, so you get to see all of the headers, which is really important if you were doing something like trying to keep an email thread going, so if you for example have emails in a forum or something like GitHub where you have issues and you want all of those emails to be in the same thread inside of Gmail or outlook or whatever, then knowing these headers like the message id and the reply_to id and all that kind of stuff can be really important to be able to look at. This gem takes care of all of that for you, and whenever you're done, you can just click quit in the web interface and that will shut down the background daemon and you are good to go. That's really all there is to the MailCatcher gem, it's actually that easy but it's incredibly useful for anyone doing a lot of design work on doing these emails or trying to get your headers perfect and all that stuff. Take a look at this gem, and hopefully it'll save you some time doing some email design work in the next app. Until next episode, I will talk to you later. Peace v
+
+
+
+
+
+
+
+
+
+
+
+
+Learn how to send emails to a local SMTP server called Mailcatcher for testing and designing emails 
