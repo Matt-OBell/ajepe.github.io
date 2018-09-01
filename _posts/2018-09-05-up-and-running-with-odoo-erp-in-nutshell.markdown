@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Odoo in Nutshell"
-date:   2018-09-01 07:59:12 +0100
+title:  "Odoo ERP in Nutshell"
+date:   2018-09-05 07:59:12 +0100
 categories: Odoo
 ---
 
