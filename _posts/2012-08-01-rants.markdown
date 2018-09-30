@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Collection rants"
+title:  "Rants"
 date:   2012-08-01 10:01:38 +0100
 categories: rants
 ---
