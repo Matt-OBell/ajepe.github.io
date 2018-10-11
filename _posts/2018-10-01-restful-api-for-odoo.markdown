@@ -4,7 +4,8 @@ title:  "Restful API for Odoo"
 date:   2018-10-01 07:59:12 +0100
 categories: Odoo
 ---
-This is an HTTP framework(module) that only cares about generating an HTTP response for each HTTP request, In other to get the best use out of this, a basic or deep  understating of Odoo RPC API interface is required(though not that neccessary) especially when dealing with Many2many and One2many relationship. 
+This is an HTTP API framework(module) documentation for Odoo, the module cares only about generating an HTTP response for every HTTP request.
+To get the best use out of this, deep  understating of Odoo RPC API interface is required(though not that neccessary) especially when dealing with __*2many__. 
 
 The implementation sits on the existing Odoo RPC features, data structures  and format when creating or delecting Odoo's records are still applicable. I will be demostrating the usage using python request library.
 
